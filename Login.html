@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    .inputtext {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #f2f2f2;
+      font-size: 16px;
+      color: #333;
+      box-sizing: border-box;
+    }
+
+    .tombol {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .login-box {
+      width: 350px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 30px;
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <!-- Ganti URL ini dengan ID file Google Drive dan gunakan format berbagi gambar -->
+  <img src="Logo.png" class="logo" alt="Logo">
+
+  <form onsubmit="login(); return false;">
+    <input type="text" name="username" placeholder="Username" class="inputtext">
+    <input type="password" name="password" placeholder="Password" class="inputtext">
+    <input type="submit" value="Login" class="tombol">
+  </form>
+</div>
+
+<script>
+  function login() {
+    var username = document.getElementsByName("username")[0].value;
+    var password = document.getElementsByName("password")[0].value;
+
+    if (username === "LUCAS" && password === "LUGUANG") {
+      window.open("https://harukasungjinwoo.blogspot.com/", "_blank");
+    } else {
+      alert("Username atau password salah!");
+    }
+  }
+</script>
+
+</body>
+</html>
